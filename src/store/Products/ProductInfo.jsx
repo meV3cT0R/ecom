@@ -98,7 +98,7 @@ const ProductInfo = ()=>{
                                             quantity : counter,
                                             total:(product.price/100)*counter 
                                         })
-                                        console.log(`product name : ${newCart[newCart.length-1].product.name} typeof(Total) : ${typeof(newCart[newCart.length-1].total)}`)
+                                        
                                     }
 
                                     setCart(newCart);
