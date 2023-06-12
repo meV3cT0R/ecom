@@ -24,7 +24,7 @@ const Home = () => {
     },[]);
     return (
         <div className="bg-gray-100 w-[100vw]">
-            <div className="px-20 grid sm:grid-cols-2 gap-[8rem] pt-10 sm:pt-20 pb-40 max-w-[1170px] mx-auto">
+            <div className="px-7 grid sm:grid-cols-2 gap-[8rem] pt-10 sm:pt-20 pb-40 max-w-[1170px] mx-auto">
                 <div className="w-full lg:min-w-lg pt-20 flex flex-col space-y-10 items-start">
                     <h1 className="capitalize text-3xl md:text-5xl font-bold font-serif">design your comfort zone</h1>
                     <p className="text-gray-600 md:text-xl">
@@ -46,7 +46,7 @@ const Home = () => {
                     <h1 className="text-center text-4xl font-bold">Featured Products</h1>
                     <div className="w-[100px] h-[5px] bg-amber-600"></div>
                 </div>
-                <div className="grid sm:grid-cols-3 gap-8 px-10 sm:px-20 mt-16 max-w-[1170px] mx-auto">
+                <div className="grid sm:grid-cols-3 gap-8 px-3 sm:px-20 mt-16 max-w-[1170px] mx-auto">
                     {
                         featuredProducts.map(data=>{
                             return <Product key={data.id} product={data} />
@@ -55,10 +55,10 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="bg-red-100 py-20 px-20 ">
+            <div className="bg-red-100 py-20 px-10 md:px-20 ">
                 <div className="max-w-[1170px] mx-auto">
 
-                    <div className="flex flex-col sm:flex-row justify-between">
+                    <div className="flex flex-col sm:flex-row justify-between mb-10">
                         <h1 className="capitalize text-red-800 text-3xl font-bold max-w-sm">Custom Furniture Build Only For you</h1>
                         <p className="max-w-lg text-red-400">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum debitis consectetur reprehenderit non aliquam voluptates dolore aut vero consequuntur.
@@ -85,7 +85,7 @@ const Home = () => {
                     </p>
                     
                     <form className="sm:basis-1/2 w-full">
-                        <input type='text' className="border rounded-e-none rounded border-black w-4/5 lg:w-4/5 h-[50px] px-3" placeholder="Enter Email" />
+                        <input type='text' className="border rounded-e-none rounded border-black w-3/5 md:w-4/5 h-[50px] px-3" placeholder="Enter Email" />
                         <button
                             className="px-4 bg-amber-900 text-white h-[50px] rounded rounded-s-none border-l-0"
                         >Subscribe</button>

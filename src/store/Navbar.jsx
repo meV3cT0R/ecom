@@ -6,7 +6,7 @@ const Navbar = () =>{
     return (
         <div className="flex flex-col max-sm:py-5 sm:flex-row sm:h-[5rem] bg-gray-100  px-10 sm:justify-center space-y-10 sm:space-y-0 items-start sm:items-center">
             <div className="max-sm:flex max-sm:justify-between max-sm:w-full ">
-                <h1 className="text-5xl font-serif ">Comfy<span className="text-amber-700">Sloth</span></h1>
+                <h1 className="text-3xl md:text-5xl font-serif ">Comfy<span className="text-amber-700">Sloth</span></h1>
                 <button
                     className="block sm:hidden"
                     onClick={(e)=>{

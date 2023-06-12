@@ -122,6 +122,9 @@ const Cart = ()=>{
                                 </button>
                                 <button
                                     className="md:text-lg text-gray-200 bg-black rounded shadow px-3 text-xs py-1"
+                                    onClick={e=>{
+                                        setCart([]);
+                                    }}
                                 >
                                     Clear Shopping Cart
                                 </button>
