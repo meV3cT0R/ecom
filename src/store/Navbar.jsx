@@ -16,9 +16,12 @@ const Navbar = () =>{
                         if(navLinks.classList.contains("hidden")) {
                             navLinks.classList.remove("hidden");
                             otherNavLinks.classList.remove("hidden")
+                            e.target.classList.add("text-amber-700")
                         }else {
                             navLinks.classList.add("hidden");
                             otherNavLinks.classList.add("hidden");
+                            e.target.classList.remove("text-amber-700")
+                            
                         }
                     }}
                 >
