@@ -6,11 +6,14 @@ import { useEffect } from "react";
 import compass from "./images/compass.png"; 
 import history_book from "./images/history-book.png"; 
 import pickaxe from "./images/pickaxe.png"; 
+import { PRODUCTS, url } from "./constants";
+import { useGlobalContext } from "../context";
 
-export const url = "https://course-api.com/react-store-products";
+
 
 const Home = () => {
     const [featuredProducts,setFeaturedProducts] = useState([]);
+    const { setWebPageState }  = useGlobalContext();
     const fetchData = async () => {
         try {
             const {data} = await axios(url);
@@ -30,7 +33,12 @@ const Home = () => {
                     <p className="text-gray-600 md:text-xl">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at sed omnis corporis doloremque possimus velit! Repudiandae nisi odit, aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis alias?
                     </p>
-                    <button className="bg-amber-700 px-4 py-1 sm:px-5 sm:py-2 text-white rounded uppercase text-lg sm:text-xl hover:bg-amber-600 duration-100">
+                    <button
+                        className="bg-amber-700 px-4 py-1 sm:px-5 sm:py-2 text-white rounded uppercase text-lg sm:text-xl hover:bg-amber-600 duration-100"
+                        onClick={e=>{
+                            setWebPageState(PRODUCTS);
+                        }}
+                    >
                         Shop Now
                     </button>
                 </div>

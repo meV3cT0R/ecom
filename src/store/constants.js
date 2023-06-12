@@ -4,6 +4,7 @@ export const PRODUCTS = "PRODCUTS";
 export const PRODUCTINFO = "PRODUCTINFO";
 export const CART = "CART";
 export const LOGIN = "LOGIN";
+export const REGISTER = "REGISTER";
 
 // Products
 // actions
@@ -19,3 +20,7 @@ export const DefaultState = "DefaultState"
 //shipping fee
 
 export const shippingFee = 6.9;
+
+
+//url
+export const url = "https://course-api.com/react-store-products";

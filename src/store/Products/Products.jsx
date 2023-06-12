@@ -3,9 +3,9 @@ import { useReducer } from "react";
 import { useContext } from "react";
 import { useEffect } from "react";
 import { createContext } from "react";
-import { CATEGORY, PRODUCTS, COMPANY, PRICE, KEYWORD, COLOR,DefaultState } from "../constants";
-import { url } from "../Home";
-import Product from "./Product";
+import { CATEGORY, PRODUCTS, COMPANY, PRICE, KEYWORD, COLOR,DefaultState, url } from "../constants";
+
+
 import { WhereAboutBar } from "../utility/Utility";
 import SideBar from "./Sidebar";
 import MainContent from "./MainContent";

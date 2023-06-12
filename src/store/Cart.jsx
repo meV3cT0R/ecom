@@ -1,5 +1,5 @@
 import { useGlobalContext } from "../context";
-import { CART, PRODUCTS, shippingFee } from "./constants";
+import { CART, LOGIN, PRODUCTS, shippingFee } from "./constants";
 import { formatDecimalMoney, formatDecimalMoneyPrecise } from "./Products/Product";
 import { WhereAboutBar } from "./utility/Utility";
 
@@ -33,7 +33,7 @@ const Cart = ()=>{
     return (
         <>
             <WhereAboutBar page={page}/>
-            <div className="mx-auto text-center space-y-5 md:w-[80vw] mb-20">
+            <div className="mx-auto text-center space-y-5 w-[90vw] md:w-[80vw] mb-20">
                 
                 {
                     cart.length == 0 
@@ -62,7 +62,7 @@ const Cart = ()=>{
 
                                     {cart.map(product=>{
                                         return <>
-                                            <div className="grid grid-cols-12 py-10 md:py-16 ">
+                                            <div key={product.product.id} className="grid grid-cols-12 py-10 md:py-16 ">
                                                 <div className="col-span-5 grid grid-cols-[100px,200px] space-x-4  items-center  h-[80px]">
                                                     <img src={product.product.image} className=" w-full  object-cover h-full"/>
                                                     <div>
@@ -139,6 +139,17 @@ const Cart = ()=>{
                                 <h1 className="grid grid-cols-2 mb-4"> Shipping fee : <span>${shippingFee}</span></h1>
                                     <hr/>
                                 <h1 className="font-bold text-3xl mt-4 grid grid-cols-2">Order Total : <span>{ formatDecimalMoneyPrecise(cart.length>1?cart.reduce((x,y)=>typeof(x)!="number"?x.total+y.total:x+y.total):cart[0].total) }</span></h1>
+                            </div>
+                            <div className="flex justify-end">
+
+                                <button
+                                    className="border shadow rounded bg-amber-600 w-[200px] py-2 text-white"
+                                    onClick={e=>{
+                                        setWebPageState(LOGIN)
+                                    }}  
+                                >
+                                    Login
+                                </button>
                             </div>
                         </>
                     )

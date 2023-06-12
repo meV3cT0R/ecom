@@ -94,7 +94,7 @@ const SideBar = ()=>{
                         <>
                             {
                                 (color.startsWith('#') && <button
-                                    key={color}
+                                    key={"color"+color}
                                     id={"color"+color}
                                     className="w-5 h-5 border rounded-full mr-2"
                                     style={{"backgroundColor": color}}
