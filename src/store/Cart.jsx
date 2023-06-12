@@ -67,7 +67,7 @@ const Cart = ()=>{
                                                     <img src={product.product.image} className=" w-full  object-cover h-full"/>
                                                     <div className="">
                                                         <h1 className="text-xs font-semibold md:text-lg h-[100%] ">{product.product.name}</h1>
-                                                        <div className="text-xs text-amber-700 md:text-lg">
+                                                        <div className="text-xs text-amber-700 md:text-lg md:hidden">
                                                             {formatDecimalMoney(product.product.price/100)}
                                                         </div>
                                                     </div>
@@ -77,7 +77,7 @@ const Cart = ()=>{
                                                         {formatDecimalMoney(product.product.price/100)}
                                                     </div>
                                                 </div>
-                                                <div className="grid items-center col-span-4 md:text-xl ">
+                                                <div className="grid items-center col-span-4 md:col-span-2 md:text-xl ">
                                                         <div>
                                                             <button
                                                                 className="px-4 "
