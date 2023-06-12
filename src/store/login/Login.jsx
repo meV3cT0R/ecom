@@ -7,7 +7,7 @@ const Login =()=>{
         <form onSubmit={e=>{
             e.preventDefault();
             }} 
-            className="px-8 py-6 border shadow rounded w-[80vw] md:max-w-sm mx-auto mt-[5%]  font-mono"
+            className="mb-10 px-8 py-6 border shadow rounded w-[80vw] md:max-w-sm mx-auto mt-[5%]  font-mono"
         >
             <h1 className="text-3xl font-bold text-center capitalize mb-6">Login</h1>
             <div className="mb-6">

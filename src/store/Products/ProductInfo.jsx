@@ -32,8 +32,8 @@ const ProductInfo = ()=>{
                     </button>
                     <div className="grid md:grid-cols-2 gap-8 md:gap-20 mt-10 items-center">
                         <div>
-                            <img src={product.image} className="h-[500px] w-full object-cover"/>
-                            <div className="grid grid-cols-5 gap-4 mt-5 h-24">
+                            <img src={product.image} className="h-[300px] md:h-[500px] w-full object-cover"/>
+                            <div className="grid grid-cols-5 gap-4 mt-5 h-16 md:h-24">
                                 <div className="border border-black rounded"></div>
                                 <div className="border border-black rounded"></div>
                                 <div className="border border-black rounded"></div>

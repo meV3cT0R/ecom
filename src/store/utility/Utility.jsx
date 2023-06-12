@@ -6,9 +6,9 @@ export const WhereAboutBar = ({page}) =>{
     const {setWebPageState} = useGlobalContext();
     return (
         <div className="bg-amber-100 mb-10 md:mb-20">
-            <div className="min-h-[20vh] max-w-[1170px] mx-auto items-center flex max-sm:pl-10">
+            <div className="min-h-[10vh] md:min-h-[20vh] max-w-[1170px] mx-auto items-center flex max-sm:pl-10">
 
-                <p className="text-3xl md:text-5xl text-amber-600 ">
+                <p className="text-2xl md:text-5xl text-amber-600 ">
                     <a 
                         className="cursor-pointer"
                         onClick={(e)=>{
