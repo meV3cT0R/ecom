@@ -26,7 +26,7 @@ const Home = () => {
         fetchData()
     },[]);
     return (
-        <div className="bg-gray-100 w-[100vw]">
+        <div className="bg-gray-100 w-[100%]">
             <div className="px-7 grid sm:grid-cols-2 gap-[8rem] pt-10 sm:pt-20 pb-40 max-w-[1170px] mx-auto">
                 <div className="w-full lg:min-w-lg pt-20 flex flex-col space-y-10 items-start">
                     <h1 className="capitalize text-3xl md:text-5xl font-bold font-serif">design your comfort zone</h1>
